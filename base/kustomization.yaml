@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: openshift-operators
+
+resources:
+  - amq-streams-operator-subscription.yaml
+  - amq-streams-operatorgroup.yaml
+  - amq-streams-operator-install-approvaljob.yaml
+  - amq-streams-operator-upgrade-approvaljob.yaml
+  - amq-streams-operator-rbac.yaml
+  - amq-streams-operator-sa.yaml
